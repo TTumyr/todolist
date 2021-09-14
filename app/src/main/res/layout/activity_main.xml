@@ -7,12 +7,136 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="#00E0E0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/app_name"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="@+id/header"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/header"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias="0.50" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/header"
+        app:layout_constraintVertical_bias=".50"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="#ff7519"
+        android:clickable="true"
+        android:gravity="center|center_vertical"
+        android:letterSpacing=".1"
+        android:text="Playing Wow Tonight"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/ivtasksetting"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+        android:id="@+id/ivtasksetting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="#ff7519"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task"
+        app:layout_constraintTop_toBottomOf="@+id/header"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/ivtasksetting"
+        app:layout_constraintEnd_toEndOf="@+id/ivtasksetting"
+        app:layout_constraintTop_toTopOf="@+id/ivtasksetting"
+        app:layout_constraintStart_toStartOf="@+id/ivtasksetting"
+        app:layout_constraintVertical_bias=".50"
+        app:layout_constraintHorizontal_bias=".50"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+    <TextView
+        android:id="@+id/task1"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:background="#ff7519"
+        android:clickable="true"
+        android:gravity="center|center_vertical"
+        android:letterSpacing=".1"
+        android:text="Going to stop now"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_background"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/ivtasksetting1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/task" />
+
+    <TextView
+        android:id="@+id/ivtasksetting1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="5dp"
+        android:background="#ff7519"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/task1"
+        app:layout_constraintTop_toBottomOf="@+id/task"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/ivtasksetting1"
+        app:layout_constraintEnd_toEndOf="@+id/ivtasksetting1"
+        app:layout_constraintTop_toTopOf="@+id/ivtasksetting1"
+        app:layout_constraintStart_toStartOf="@+id/ivtasksetting1"
+        app:layout_constraintVertical_bias=".50"
+        app:layout_constraintHorizontal_bias=".50"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

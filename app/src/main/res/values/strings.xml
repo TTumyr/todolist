@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">todolist</string>
+    <string name="lbToDoLists">To Do Lists</string>
+    <string name="lbLists">Lists</string>
+    <string name="lbMenuLists">Lists</string>
+    <string name="lbMenuHistory">History</string>
+    <string name="lbMenuToDoList">To Do</string>
+    <string name="lbMenuSearch">Search</string>
+    <string name="lbComplete">Complete</string>
+    <string name="lbIgnore">Ignore</string>
+    <string name="lbCalendar">Calendar</string>
+    <string name="lbCopy">Copy</string>
+    <string name="lbName">Name</string>
+    <string name="lbDuration">Duration</string>
+    <string name="lbFrequency">Frequency</string>
+    <string name="lbDayOfTheWeek">Day Of The Week</string>
+    <string name="lbDoAfter">Do After</string>
+    <string name="lbDelay">Delay</string>
+    <string name="lbNextNotification">Next Notification</string>
 </resources>
