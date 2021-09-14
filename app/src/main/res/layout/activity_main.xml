@@ -54,7 +54,7 @@
         android:clickable="true"
         android:gravity="center|center_vertical"
         android:letterSpacing=".1"
-        android:text="Playing Wow Tonight"
+        android:text="I know what you do not know hihi"
         android:textAllCaps="true"
         android:textColor="@color/design_default_color_background"
         android:textSize="14sp"
