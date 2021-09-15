@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import com.example.todolist.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+class TaskSettings : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,14 +14,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val bPlus = binding.ivPlus as ImageView
-            bPlus.setOnClickListener{
-            val intent = Intent(this, TaskSettings::class.java)
-            startActivity(intent)
-        }
 
-
-
-
+        //val bBack = binding.ivBack as ImageView
+        //bBack.setOnClickListener {
+        //    val intent = Intent(this, TaskSettings::class.java)
+        //    startActivity(intent)
+        //}
     }
 }

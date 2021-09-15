@@ -9,7 +9,7 @@
     <TextView
         android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:layout_marginStart="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
@@ -33,15 +33,17 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/ivPlus"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="30dp"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="@+id/header"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/header"
         app:layout_constraintVertical_bias=".50"
-        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/task"
@@ -54,7 +56,7 @@
         android:clickable="true"
         android:gravity="center|center_vertical"
         android:letterSpacing=".1"
-        android:text="I know what you do not know hihi"
+        android:text="Vacuum Cleaning"
         android:textAllCaps="true"
         android:textColor="@color/design_default_color_background"
         android:textSize="14sp"
@@ -100,7 +102,7 @@
         android:clickable="true"
         android:gravity="center|center_vertical"
         android:letterSpacing=".1"
-        android:text="Going to stop now"
+        android:text="Bathroom"
         android:textAllCaps="true"
         android:textColor="@color/design_default_color_background"
         android:textSize="14sp"
